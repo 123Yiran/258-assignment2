@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <meta name="description" content="An introduction interface about Honkai: Star Rail">
+    <link rel="stylesheet" href="https://jigsaw.w3.org/css-validator/validator">
+    <link rel="stylesheet" href="https://jigsaw.w3.org/css-validator/validator">
+    <meta name="keywords" content="Honkai: Star Rail, turn-based game, miHoYo">
+    <link rel="stylesheet" href="~/root/css/styles.css" />
+</head>
+<body class="background-black">
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="~/Image/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="navbar-nav">
+                <li>@Html.ActionLink("Index", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Planets", "Planets", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Characters", "Characters", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("News", "News", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("About Destinies", "Index", "Destinies", new { area = "" }, new { @class = "nav-link" })</li>
+
+
+                <li>
+                    @using (Html.BeginForm("Index", "Characters", FormMethod.Get, new { @class = "navbar-form" }))
+                    {
+                        <div class="form-group" style="position: relative">
+                            @Html.TextBox("Search", null, new { @class = "form-control search-input", @placeholder = "Search characters" })
+                            <button type="submit" class="btn btn-primary search-button">Search</button>
+                        </div>
+                    }
+                </li>
+
+                <!--
+                <li class="nav-item login-item">
+                    <a href="#">Login</a>
+                    <div class="vertical-line"></div>
+                    <div class="icon-login">
+                        <img src="~/Image/login.png" alt="Login">
+                    </div>
+                </li>-->
+            </ul>
+
+        </nav>
+    </div>
+
+    <div class="audio-player-container">
+        <audio id="entrance-music" autoplay loop>
+            <source src="~/Musics/in.ogg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="overlay">
+        <div class="text-container">
+            <p id="text-display"></p>
+        </div>
+    </div>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="https://webstatic.mihoyo.com/upload/op-public/2023/02/23/5e355dea3eaf1f31ea497d5703b0c505_2947932349865370574.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <div class="content">
+        <div class="contact-info">
+            <h3>Honkai: Star Rail</h3>
+            <p>"Honkai: Star Rail" is a galactic adventure and strategy game developed by Shanghai miHoYo Network Technology Co., Ltd., representing the fifth installment in miHoYo's "Honkai" series. </p>
+            <p> In this game, players board the Cosmic Rail, embarking on a journey through the diverse realms of the universe.</p>
+            <p>Alongside a multitude of companions, they work together to thwart the various crises triggered by the "Star Core" and resist the ambitions of the "Aeons" who seeks to trample civilizations.</p>
+        </div>
+        <div class="map-container">
+            <div class="map-content">
+                <h3>company location:</h3>
+                <div id="baidu-map" class="map">
+                    <script src="https://api.map.baidu.com/api?v=2.0&ak=CcGtBuZFl9N0DseIO7KqLvS4IT0zGnog" type="text/javascript"></script>
+                    <script>
+                        var map = new BMap.Map("baidu-map");
+                        var point = new BMap.Point(121.442271, 31.176189);
+                        map.centerAndZoom(point, 15);
+                        var marker = new BMap.Marker(point);
+                        map.addOverlay(marker);
+                        var infoWindow = new BMap.InfoWindow("Location: mihoyo");
+                        marker.addEventListener("click", function () {
+                            this.openInfoWindow(infoWindow);
+                        });
+                    </script>
+
+                </div>
+                <div class="contact-us">
+                    <a href="mailto:contact@example.com">contact us:mailto:contact@example.com</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="icon">
+        <img src="~/Image/year.png" alt="12+">
+    </div>
+
+    <script src="~/Scripts/idexscript.js"></script>
+</body>
+</html>

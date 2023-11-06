@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "News";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/root/css/news.css" />
+</head>
+<body class="background-black">
+    <img src="~/Image/newsground.png" alt="background1" class="background-image" />
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="~/Image/jiantou.png" alt="Left Arrow" class="arrow left-arrow" onclick="moveCarousel('left')">
+            <div class="slider">
+                <div class="item center-video">
+                    <a href="javascript:void(0);" onclick="navigateToURL('https://www.bilibili.com/video/BV1dF411C77c?t=2.1&p=3');">
+                        <img src="~/Image/danpv.png" alt="Image 1">
+                    </a>
+                    <div class="text-box">
+                        <p>Dan Heng Imbibitor Lunae PV</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(1);" onclick="navigateToURL('https://www.bilibili.com/video/BV1MN41187U6?t=65.8&p=3');">
+                        <img src="~/Image/kfk.png" alt="Image 2">
+                    </a>
+                    <div class="text-box">
+                        <p>Kafka PV</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(2);" onclick="navigateToURL('https://www.bilibili.com/video/BV1U34y1G73e?t=1.4&p=3');">
+                        <img src="~/Image/beng14.png" alt="Image 3">
+                    </a>
+                    <div class="text-box">
+                        <p>Version 1.4 PV 「Winter Dream Awakened」</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(3);" onclick="navigateToURL('https://www.bilibili.com/video/BV1vw411r7yL?t=22.7&p=3');">
+                        <img src="~/Image/jingliu.png" alt="Image 4">
+                    </a>
+                    <div class="text-box">
+                        <p>Jing Liu PV</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(4);" onclick="navigateToURL('https://www.bilibili.com/video/BV1Th4y1S7KF?t=1.5&p=3');">
+                        <img src="~/Image/yinyue.png" alt="Image 5">
+                    </a>
+                    <div class="text-box">
+                        <p>Animated Short Film: Dark and Yellow</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(5);" onclick="navigateToURL('https://www.bilibili.com/video/BV1CG411f7Aq?t=2.0&p=3');">
+                        <img src="~/Image/pv1.3.png" alt="Image 6">
+                    </a>
+                    <div class="text-box">
+                        <p>Version 1.4 PV 「Heavenly Mirror Reflecting the Ravages of Time」</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(6);" onclick="navigateToURL('https://www.bilibili.com/video/BV1R94y1W7pL?t=2.3&p=3');">
+                        <img src="~/Image/fuxuan.png" alt="Image 7">
+                    </a>
+                    <div class="text-box">
+                        <p>Fu Xuan PV</p>
+                    </div>
+                </div>
+
+                <!-- Repeat the item structure for all 8 items -->
+            </div>
+            <img src="~/Image/jiantouyou.png" alt="Right Arrow" class="arrow right-arrow" onclick="moveCarousel('right')">
+        </div>
+    </div>
+
+    <script src="~/Scripts/News.js"></script>
+</body>
+</html>

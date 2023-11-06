@@ -1,0 +1,202 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    padding: 15px 20px;
+    height: 5vh;
+}
+.search-input {
+    border-radius: 10px;
+   height:25px;
+}
+.search-button {
+    background-color: whitesmoke;
+    color: dimgray;
+    border: 1px solid rgb(225, 176, 102);
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.navbar-logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+    .navbar-logo img {
+        margin-left:20px;
+        width: 180px;
+        height: auto;
+    }
+
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    margin-left: 260px;
+    padding: 0;
+    align-items: center;
+}
+
+    .navbar-nav li {
+        margin-right: 30px;
+    }
+
+    .navbar-nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+        .navbar-nav a:hover {
+            color: rgb(225, 176, 102);
+        }
+
+
+.icon {
+    position: fixed;
+    bottom: 50px; 
+    right: 20px; 
+}
+    .icon img {
+        width: 70px;
+        height:auto;
+    }
+
+.nav-item.login-item {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes the login item to the right */
+    padding: 0 10px; /* Add padding for spacing */
+}
+
+
+.vertical-line {
+    border-left: 1px solid #fff; 
+    height: 20px; 
+    margin: 0 10px; 
+}
+
+.icon-login {
+    position: relative; 
+    top: 0; 
+    right: 0;
+}
+    .icon-login img {
+        width:40px;
+        height: auto;
+    }
+
+.content {
+    background: rgba(0, 0, 0, 1);
+    padding: 2px 0px 20px 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: -30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.icon-mihoyo,
+.icon-logo {
+    margin: 40px;
+}
+
+.vertical-line {
+    height: 50px; /* Adjust the height as needed */
+    width: 1px;
+    background-color: #fff;
+}
+
+.map-container {
+    box-sizing: border-box;
+    width: 45%;
+    padding-left: 20px;
+}
+
+.map-info {
+    color: #fff;
+}
+
+.map-container h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+    padding-right: 20px;
+}
+
+.map {
+    margin-top: 20px;
+    width: 80%;
+    height: 100px;
+}
+
+.contact-us a {
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+    .contact-us a::after {
+        content: " (Click here to contact us)";
+        position: absolute;
+        top: -10px; /* Adjust the distance from the top to position above the text */
+        right: 0;
+        padding: 5px;
+        border-radius: 5px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+    }
+
+    .contact-us a:hover::after {
+        opacity: 1;
+    }
+
+
+.icon-mihoyo,
+.icon-logo {
+    text-align: center;
+}
+
+    .icon-mihoyo
+    img {
+        width: 80%;
+    }
+
+    .icon-logo img {
+        width: 80%;
+    }
+
+.vertical-line {
+    width: 1px;
+    height: 40px; /* 减小高度 */
+    background-color: #000; /* 调整竖线的颜色 */
+    margin: 0 10px; /* 减小竖线与图标之间的距离 */
+}

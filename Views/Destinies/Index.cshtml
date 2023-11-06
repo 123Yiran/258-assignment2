@@ -1,0 +1,77 @@
+﻿@model IEnumerable<assignment2.Models.Destiny>
+
+@{
+    ViewBag.Title = "Destiny";
+}
+
+<link rel="stylesheet" href="~/root/css/destiny-index.css" />
+<div class="background-image"></div>
+<div class="showTable">
+
+    <div class="question-mark">?</div>
+    <div class="popup" id="popup">
+
+        <div class="popup-content">
+            <h3>What is Destiny</h3>
+            <p>
+                In this galaxy, there exist beings known as "Aeons" who shape reality, erase stars,
+                and leave their marks across countless "worlds."
+
+            </p>
+            <p>
+                Very little is known about these enigmatic entities that wander the depths of interstellar space.
+                Constrained by limited comprehension, sentient beings can only vaguely sense the paths trodden by the Aeons,
+                paths that remain hidden from mortal view.
+                These celestial beings exercise their immeasurable powers in pursuit of some profound philosophy.
+                Eventually, in the myths passed down through oral tradition,
+                the Aeons became embodiments of highly concentrated philosophical concepts.
+            </p>
+            <p>
+                The "Destinies" represent the divine journeys undertaken by the Aeons.
+                Those who walk alongside them are bestowed with their blessings.
+                Whether by conscious choice or unwittingly, when mortals step onto a "Fate Path" governed by the Aeons,
+                they embark on a lifelong journey to become "Pathfinders," devoted to embodying the ideals of these celestial beings.
+            </p>
+        </div>
+    </div>
+
+    <script src="~/Scripts/Destiny.js"></script>
+    <p>
+
+    </p>
+    <div class="page-second">
+        <h2>Select Destinies</h2>
+        <div class="destinies-container">
+            @foreach (var item in Model)
+            {
+                <div class="destiny-item">
+                    <div class="destiny-wrapper">
+                        <div class="destiny-flipper">
+                            <div class="destiny-front">
+                                <div class="destiny-image">
+                                    @if (item.IsInverted)
+                                    {
+                                        <img src="@Url.Content(item.ImagePath)" alt="Destiny Image" class="invert-image">
+                                    }
+                                    else
+                                    {
+                                        <img src="@Url.Content(item.ImagePath)" alt="Destiny Image">
+                                    }
+                                    <p> @Html.Raw(item.Name.Replace(" ", "<br>"))</p>
+                                </div>
+                            </div>
+                            <div class="destiny-back">
+                                <div class="destiny-info">
+
+                                    <h3>@Html.ActionLink(item.Name, "Index", "Characters", new { destiny = item.Name }, null)</h3>
+                                    <p>@item.Description</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

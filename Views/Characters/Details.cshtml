@@ -1,0 +1,71 @@
+﻿@model assignment2.Models.Character
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<link rel="stylesheet" href="~/root/css/characters-details.css" />
+<div class="showTable">
+    <h2>Details</h2>
+
+    <div>
+        <h4>Character</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <div class="col-md-12 text-right pt-2">
+                
+                <dd>
+                    <img src="@Url.Content(Html.DisplayFor(model => model.ImagePath).ToString())" alt="Destiny Image" class="top-right-image">
+                </dd>
+            </div>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Destiny.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Destiny.Name)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Age)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Age)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Faction)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Faction)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Attribute)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Attribute)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

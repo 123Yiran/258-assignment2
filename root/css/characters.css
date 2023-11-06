@@ -1,0 +1,364 @@
+﻿
+
+.all-characters {
+    position: fixed;
+    top: 100px; 
+    right: 20px; 
+    z-index: 9999; 
+}
+
+.nav-link {
+    color: white; 
+}
+
+    .nav-link:hover {
+        color: rgb(225, 176, 102);
+    }
+.content {
+    background: rgba(0, 0, 0, 1);
+    padding: 2px 0px 20px 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: -30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.icon-mihoyo,
+.icon-logo {
+    margin: 40px;
+}
+
+.vertical-line {
+    height: 50px; 
+    width: 1px;
+    background-color: #fff;
+}
+
+.map-container {
+    box-sizing: border-box;
+    width: 45%;
+    padding-left: 20px;
+}
+
+.map-info {
+    color: #fff;
+}
+
+.map-container h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+    padding-right: 20px;
+}
+
+.map {
+    margin-top: 20px;
+    width: 80%;
+    height: 100px;
+}
+
+.contact-us a {
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+    .contact-us a::after {
+        content: " (Click here to contact us)";
+        position: absolute;
+        top: -10px; 
+        right: 0;
+        padding: 5px;
+        border-radius: 5px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+    }
+
+    .contact-us a:hover::after {
+        opacity: 1;
+    }
+
+
+.icon-mihoyo,
+.icon-logo {
+    text-align: center;
+}
+
+    .icon-mihoyo
+    img {
+        width: 80%;
+    }
+
+    .icon-logo img {
+        width: 80%;
+    }
+
+.vertical-line {
+    width: 1px;
+    height: 40px; 
+    background-color: #000; 
+    margin: 0 10px; 
+}
+.section-title1 {
+    position: absolute;
+    color: rgb(0, 71, 171);
+    top: -173.5%;
+    left: 15%;
+    transform: translateX(-50%);
+    padding: 10px 20px; 
+    font-size: 44px;
+    z-index: 2;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-family: 'Pacifico','Times New Roman';
+}
+.section-title2 {
+    position: absolute;
+    color: rgb(0, 71, 171);
+    top: -173.5%;
+    left: 5%;
+    transform: translateX(-50%);
+    padding: 10px 20px; 
+    font-size: 44px;
+    z-index: 2;
+    font-style: italic; 
+    letter-spacing: 1px;
+    font-family: 'Pacifico','Times New Roman';
+}
+.icon-container {
+    position: fixed;
+    left: 5%;
+    top: 53%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 200000;
+}
+    .icon-container img {
+        cursor: pointer;
+        transition: transform 0.3s ease; 
+    }
+   
+        .icon-container img:nth-child(1) {
+            margin-right:8%;
+            height:25px;
+            width:auto;
+        }
+
+    .icon-container img:nth-child(2) {
+        width: 160px;
+        height: auto;
+        margin-bottom: 30px; 
+    }
+
+    .icon-container img:nth-child(3) {
+        width: 160px;
+        height: auto;
+        margin-bottom: 30px; 
+    }
+
+        .icon-container img:nth-child(4) {
+            width: 160px; 
+            height: auto; 
+        }
+
+        .icon-container img:nth-child(5) {
+            height: 25px;
+            width: auto;
+            transform: scaleY(-1);
+            margin-right: 8%;
+        }
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#section1, #section2, #section3 {
+    height: 100vh; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; 
+    filter: blur(10px);
+    overflow: hidden;
+    background-attachment: fixed;
+
+}
+
+
+
+#parent-container1, #parent-container2, #parent-container3 {
+    position: relative;
+    width: 800px;
+    height: 25%;
+    top: 200px;
+    right: -0px;
+    transform: translateY(-50%);
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: flex-start; /* 左对齐 */
+}
+#right-image1 {
+    position: absolute;
+   
+    width: 100%;
+    transform: translateY(-50%); /* 使图片垂直居中 */
+}
+.icon-Kong {
+    position: absolute;
+    bottom: -5%;
+    left: 2%;
+    display: flex;
+}
+
+.icon-space {
+    width: 10%;
+    height: auto;
+    margin-right: 10px; /* 设置图标之间的水平间距 */
+}
+
+
+#right-image2 {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%); /* 使图片垂直居中 */
+}
+
+.icon-bo {
+    position: absolute;
+    bottom: -5%;
+    left: 2%;
+    display: flex;
+}
+
+.icon-b {
+    width: 8%;
+    height: auto;
+    margin-right: 10px; /* 设置图标之间的水平间距 */
+}
+
+#right-image3 {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%); /* 使图片垂直居中 */
+}
+
+.icon-lo {
+    position: absolute;
+    bottom: -5%;
+    left: 2%;
+    display: flex;
+}
+
+.icon-luo {
+    width: 7%;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.image-container {
+    position: absolute;
+    top: -500px;
+    right: -320px;
+}
+
+#right-image-chararcter1 {
+    max-width: 1000px;
+    height: auto;
+    z-index: 200000;
+}
+.image-container2 {
+    position: absolute;
+    top: -500px;
+    right: -320px;
+}
+
+#right-image-chararcter2 {
+    max-width: 1000px;
+    height: auto;
+    z-index: 200000;
+}
+.image-container3 {
+    position: absolute;
+    top: -500px;
+    right: -350px;
+}
+
+#right-image-chararcter3 {
+    max-width: 1000px;
+    height: auto;
+    z-index: 200000;
+}
+.overlay-text1, .overlay-text2, .overlay-text3 {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    color: floralwhite;
+    border-radius: 5px;
+    top: 140px;
+    left: 520px;
+    font-size: 14px;
+    display: none;
+    width: 65%;
+}
+.overlay-text1-2, .overlay-text2-2, .overlay-text3-2 {
+    position: absolute;
+    z-index: 1; /* 使文字在图像上方显示 */
+    background-color: rgba(46, 79, 128, 0.6);
+    padding: 5px;
+    color: floralwhite;
+    border-radius: 5px;
+    top: -80px;
+    left: 20px;
+    font-size: 14px;
+    display: none;
+    width: 40%;
+    text-align: left; /* 左对齐 */
+    text-indent: 20px;
+}
+.overlay-title1, .overlay-title2, .overlay-title3 {
+    position: absolute;
+    color:floralwhite;
+    font-size:40px;
+    font-style:italic;
+    z-index: 1; 
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px;
+    top: -185px; 
+    left: 20px;
+    display: none; 
+}
+@media screen and (max-width: 1288px) {
+    .icon-container {
+        display: none;
+    }
+}

@@ -1,0 +1,242 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    padding: 15px 20px;
+    height: 5vh;
+}
+
+.navbar-logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+    .navbar-logo img {
+        margin-left: 20px;
+        width: 180px;
+        height: auto;
+    }
+
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    margin-left: 260px;
+    padding: 0;
+    align-items: center;
+}
+
+    .navbar-nav li {
+        margin-right: 30px;
+    }
+
+    .navbar-nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+        .navbar-nav a:hover {
+            color: rgb(225, 176, 102);
+        }
+
+.search-input {
+    border-radius: 10px;
+    height: 25px;
+}
+
+.search-button {
+    background-color: whitesmoke;
+    color: dimgray;
+    border: 1px solid rgb(225, 176, 102);
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.icon {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+
+    .icon img {
+        width: 70px;
+        height: auto;
+    }
+
+.nav-item.login-item {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes the login item to the right */
+    padding: 0 10px; /* Add padding for spacing */
+}
+
+
+.vertical-line {
+    border-left: 1px solid #fff;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.icon-login {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+    .icon-login img {
+        width: 40px;
+        height: auto;
+    }
+
+.video-background {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+}
+
+.text-container {
+    color: white;
+    font-size:20px;
+    max-width: 50%;
+}
+#text-display.last-sentence {
+    font-weight: bold;
+    color: white; 
+    font-size:28px;
+    font-style:italic;
+}
+.content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2px 0px 20px 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    position: relative;
+    margin-top: -100px;
+    margin-bottom: -30px;
+    overflow: hidden;
+}
+
+    .content .contact-info {
+        color: #fff;
+        margin-top: 30px;
+        padding: 0 20px;
+        float: left; /* 左侧浮动 */
+        width: 66%; /* 分为左右两半 */
+        box-sizing: border-box;
+    }
+
+.contact-info h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+    .contact-info p:last-child {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+.map-container {
+    float: left; 
+    width: 30%; 
+    box-sizing: border-box; 
+}
+    .map-container h3 {
+        color: white;
+        font-size: 20px;
+        font-weight: lighter;
+        margin-top: 80px;
+        font-style: italic;
+    }
+    .map-content {
+        margin-top: 20px;
+        margin-left: 50px;
+        height: 150px;
+    }
+.map {
+    width: 60%; 
+    height: 90%; 
+}
+.contact-us { 
+    margin-top: 20px;
+}
+
+    .contact-us a {
+        color: white;
+        text-decoration: none;
+        font-style: italic;
+        font-size: 20px;
+        font-weight: lighter;
+        position: relative;
+        padding: 10px 0px;
+    }
+
+        .contact-us a::after {
+            content: " (Click here to contact us)";
+            position: absolute;
+            top: -10px; 
+            left:0;
+            padding: 5px;
+            border-radius: 5px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+        }
+
+            .contact-us a:hover::after {
+                opacity: 1;
+            }
+.audio-player-container {
+    width: 200px;
+    height: 50px;
+    background-color: #333;
+    border: 1px solid #777;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/x-icon" href="~/Image/logo.png" />
+    
+    <link rel="stylesheet" href="~/root/css/layout.css" />
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="~/Image/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="navbar-nav">
+                <li>@Html.ActionLink("Index", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Planets", "Planets", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Characters", "Characters", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("News", "News", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("About Destinies", "Index", "Destinies", new { area = "" }, new { @class = "nav-link" })</li>
+                
+               
+                    <li>
+                        @using (Html.BeginForm("Index", "Characters", FormMethod.Get, new { @class = "navbar-form" }))
+                        {
+                            <div class="form-group" style="position: relative">
+                                @Html.TextBox("Search", null, new { @class = "form-control search-input", @placeholder = "Search characters" })
+                                <button type="submit" class="btn btn-primary search-button">Search</button>
+                            </div>
+                        }
+                    </li>
+               
+                <!--
+    <li class="nav-item login-item">
+        <a href="#">Login</a>
+        <div class="vertical-line"></div>
+        <div class="icon-login">
+            <img src="~/Image/login.png" alt="Login">
+        </div>
+    </li>-->
+            </ul>
+            
+        </nav>
+    </div>
+
+
+    <div class="content1">
+        <div class="container">
+            @RenderBody()
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="contact-info">
+            <div class="icon-mihoyo">
+                <img src="~/Image/mihoyo.png" alt="Logo">
+            </div>
+            <div class="vertical-line"></div>
+            <div class="icon-logo">
+                <img src="~/Image/logo.png" alt="Logo">
+            </div>
+        </div>
+        <div class="map-container">
+            <div class="map-info">
+                <h3>company location: 700 Yishan Road, Building C4, 5th Floor, Xuhui District, Shanghai.</h3>
+                <div class="contact-us">
+                    <a href="mailto:contact@example.com">contact us: contact@example.com</a>
+                </div>
+
+            </div>
+            <div id="baidu-map" class="map">
+                <script src="https://api.map.baidu.com/api?v=2.0&ak=CcGtBuZFl9N0DseIO7KqLvS4IT0zGnog" type="text/javascript"></script>
+                <script>
+                    var map = new BMap.Map("baidu-map");
+                    var point = new BMap.Point(121.442271, 31.176189);
+                    map.centerAndZoom(point, 15);
+                    var marker = new BMap.Marker(point);
+                    map.addOverlay(marker);
+                    var infoWindow = new BMap.InfoWindow("Location: 米哈游总部");
+                    marker.addEventListener("click", function () {
+                        this.openInfoWindow(infoWindow);
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var vid = document.getElementById("myVideo");
+        vid.volume = 0.2;
+    </script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

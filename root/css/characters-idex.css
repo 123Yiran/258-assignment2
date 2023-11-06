@@ -1,0 +1,153 @@
+﻿body {
+    background-color: rgb(240, 241, 245)
+}
+
+.showTable {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+    margin-top: 0px;
+    margin-right: 11%;
+    margin-left: 11%;
+}
+
+.page-header {
+    margin-top: 120px;
+    background-color: white;
+}
+
+.narrow-content {
+    max-width: 93%;
+    margin: 0 auto;
+}
+
+.page-header h3 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.page-header label {
+    margin: 0;
+    color: gray;
+}
+
+.page-header p {
+    background-color: #fff;
+    color: gray;
+    font: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .table th, .table td {
+        border: 0.5px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .table tr:first-child {
+        background-color: #f2f2f2;
+    }
+
+    .table td:first-child {
+        background-color: #f2f2f2;
+    }
+
+
+
+    .table a {
+        text-decoration: none;
+        color: #007bff;
+        margin: 5px;
+        transition: color 0.2s;
+    }
+
+
+a:hover {
+    color: #0056b3;
+}
+
+
+.table .actions a {
+    margin: 0 5px;
+}
+
+.page {
+    padding-bottom: 10px;
+    padding: 5px;
+}
+
+select {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    color: lightgray;
+}
+
+    select option {
+        color: gray;
+    }
+
+input[type="submit"] {
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+    input[type="submit"]:hover {
+        background-color: darkgrey;
+    }
+
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.page-info {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.page-links {
+    display: flex;
+}
+
+.page-link a {
+    text-decoration: none;
+    color: black;
+}
+
+.page-link {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .page-link:hover {
+        background-color: darkgray;
+    }

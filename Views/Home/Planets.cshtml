@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Planets";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/root/css/planets.css" />
+    <script src="~/Scripts/planets.js"></script>
+</head>
+<body class="background-black">
+    <div class="video-background">
+        <img src="~/Image/planets.png" alt="Logo" class="background-image">
+    </div>
+
+    <!-- 区域一：标题为 "first" -->
+    <h3 class="region first" data-title="first">first planet</h3>
+
+    <!-- 区域二：标题为 "second" -->
+    <h3 class="region second" data-title="second">second planet</h3>
+
+    <!-- 区域三：标题为 "third" -->
+    <h3 class="region third" data-title="third">third planet</h3>
+
+    <!-- 弹出框的容器 -->
+    <div class="popup-container" id="popup-container">
+        <h3 id="popup-title">
+            @Html.ActionLink("Index", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
+        </h3>
+        <div class="center-image">
+            <img id="popup-image" src="" alt="Popup Image">
+        </div>
+        <audio id="popup-audio-first" controls>
+            <source src="~/Musics/m1.ogg" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="popup-audio-second" controls>
+            <source src="~/Musics/m2.ogg" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="popup-audio-third" controls>
+            <source src="~/Musics/m3.ogg" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <p id="popup-description"></p>
+    </div>
+
+</body>
+</html>

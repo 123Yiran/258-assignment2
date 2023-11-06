@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Character";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/root/css/characters.css" />
+
+</head>
+<body class="background-black">
+    <div class="all-characters">
+        @Html.ActionLink("Character Encyclopedia", "Index", "Characters", new { area = "" }, new { @class = "nav-link", target = "_blank" })
+    </div>
+    <div class="icon-container">
+        <img src="~/Image/line2.png" alt="Icon 1">
+        <img src="~/Image/spaceicon.png" alt="Icon 2" class="animate" data-section="section1" data-content="content1" data-planet="Herta Space Station" onclick="handleImageClickAndScroll(1, 'section1')" />
+        <img src="~/Image/bicon.png" alt="Icon 3" class="animate" data-section="section2" data-content="content2" data-planet="Jarilo-VI" onclick="handleImageClickAndScroll(2 , 'section2')" />
+        <img src="~/Image/luofuicon.png" alt="Icon 4" class="animate" data-section="section3" data-content="content3" data-planet="The Xianzhou Luofu" onclick="handleImageClickAndScroll(3 , 'section3')" />
+        <img src="~/Image/line.png" alt="Icon 5">
+    </div>
+    <div id="section1" class="section">
+
+        <img src="~/Image/CharacterGround.jpg" alt="background1" class="background-image" />
+        <div id="parent-container1">
+
+            <h1 class="section-title1">Herta Space Station</h1>
+            <img src="~/Image/characterground.png" alt="Your Image" id="right-image1" />
+            <div class="image-container">
+                <img src="" alt="Your Image" id="right-image-chararcter1" />
+            </div>
+            <div class="overlay-text1" id="text1">这是图标1-1的文字内容</div>
+            <div class="overlay-text1-2" id="text1-2">这是图标1-1的文字内容</div>
+            <div class="overlay-title1" id="title1">这是图标1-1的标题</div>
+            <div class="icon-Kong">
+                <img src="~/Image/CaractersIcon/Heita-icon.png" alt="Icon 1" class="icon-space" id="icon1-1" />
+                <img src="~/Image/CaractersIcon/Aisitan-icon.png" alt="Icon 2" class="icon-space" id="icon1-2" />
+                <img src="~/Image/CaractersIcon/Jinzi-icon.png" alt="Icon 3" class="icon-space" id="icon1-3" />
+                <img src="~/Image/CaractersIcon/Kfk-icon.png" alt="Icon 4" class="icon-space" id="icon1-4" />
+            </div>
+        </div>
+    </div>
+    <div id="section2" class="section">
+
+        <div id="parent-container2">
+            <h1 class="section-title2">Jarilo-VI</h1>
+            <img src="~/Image/characterground2.png" alt="Your Image" id="right-image2" />
+            <div class="image-container2">
+                <img src="" alt="Your Image" id="right-image-chararcter2" />
+            </div>
+            <div class="overlay-text2" id="text2">这是图标2-1的文字内容</div>
+            <div class="overlay-text2-2" id="text2-2">这是图标2-1的文字内容</div>
+            <div class="overlay-title2" id="title2">这是图标2-1的标题</div>
+            <div class="icon-bo">
+                <img src="~/Image/CaractersIcon/Buluoniya-icon.png" alt="Icon 1" class="icon-b" />
+                <img src="~/Image/CaractersIcon/Jiepade-icon.png" alt="Icon 2" class="icon-b" />
+                <img src="~/Image/CaractersIcon/Xier-icon.png" alt="Icon 3" class="icon-b" />
+                <img src="~/Image/CaractersIcon/Kelala-icon.png" alt="Icon 4" class="icon-b" />
+                <img src="~/Image/CaractersIcon/Sangbo-icon.png" alt="Icon 5" class="icon-b" />
+            </div>
+        </div>
+
+    </div>
+
+    <div id="section3" class="section">
+
+        <div id="parent-container3">
+            <h1 class="section-title1">The Xianzhou Luofu</h1>
+            <img src="~/Image/characterground.png" alt="Your Image" id="right-image3" />
+            <div class="image-container3">
+                <img src="" alt="Your Image" id="right-image-chararcter3" />
+            </div>
+            <div class="overlay-text3" id="text3">这是图标2-1的文字内容</div>
+            <div class="overlay-text3-2" id="text3-2">这是图标2-1的文字内容</div>
+            <div class="overlay-title3" id="title3">这是图标3-1的标题</div>
+            <div class="icon-lo">
+                <img src="~/Image/CaractersIcon/Jingyuan-icon.png" alt="Icon 1" class="icon-luo" />
+                <img src="~/Image/CaractersIcon/DanhengYinyue-icon.png" alt="Icon 2" class="icon-luo" />
+                <img src="~/Image/CaractersIcon/Fuxuan-icon.png" alt="Icon 3" class="icon-luo" />
+                <img src="~/Image/CaractersIcon/Yanqing-icon.png" alt="Icon 4" class="icon-luo" />
+                <img src="~/Image/CaractersIcon/Luocha-icon.png" alt="Icon 5" class="icon-luo" />
+            </div>
+        </div>
+
+    </div>
+
+    <script src="~/Scripts/characters.js"></script>
+
+</body>
+</html>
