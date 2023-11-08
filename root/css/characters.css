@@ -332,7 +332,7 @@ body, html {
 }
 .overlay-text1-2, .overlay-text2-2, .overlay-text3-2 {
     position: absolute;
-    z-index: 1; /* 使文字在图像上方显示 */
+    z-index: 1; 
     background-color: rgba(46, 79, 128, 0.6);
     padding: 5px;
     color: floralwhite;

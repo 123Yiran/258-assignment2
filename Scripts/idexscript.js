@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const textDisplay = document.getElementById("text-display");
     const textArray = [
         "In this galaxy, there exists beings known as the 'Aeons'. They shape reality, erase stars, leaving their mark in countless 'worlds'.",
-        "You—a special traveler, will journey alongside companions inheriting the spirit of 'exploration'. Together, you'll board the Starvault Train, traversing the galaxy, following the path once taken by a 'Aeons'.",
+        "You—a special traveler, will journey alongside companions inheriting the spirit of 'exploration'. Together, you'll board the Starvault Train, traversing the galaxy, following the path once taken by a 'Aeon'.",
         "From here, you'll delve into new civilizations, forge connections with new comrades, embarking on fresh adventures between worlds, each more wondrous and peculiar than the last. All that you seek to know, you will find amidst the constellations.",
         "So, are you prepared to embark on this journey of 'exploration'?",
         "May this voyage ultimately lead you to the stars."

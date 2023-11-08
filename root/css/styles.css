@@ -214,19 +214,7 @@
         padding: 10px 0px;
     }
 
-        .contact-us a::after {
-            content: " (Click here to contact us)";
-            position: absolute;
-            top: -10px; 
-            left:0;
-            padding: 5px;
-            border-radius: 5px;
-            white-space: nowrap;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.2s;
-        }
-
+      
             .contact-us a:hover::after {
                 opacity: 1;
             }

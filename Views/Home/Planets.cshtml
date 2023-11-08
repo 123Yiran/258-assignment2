@@ -7,6 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
+    <meta name="keywords" content="Honkai: Star Rail, turn-based game, miHoYo, Map">
+    <meta name="description" content="A planets' introduction interface about Honkai: Star Rail">
+    <link rel="stylesheet" href="https://jigsaw.w3.org/css-validator/validator">
+    <link rel="stylesheet" href="https://jigsaw.w3.org/css-validator/validator">
     <link rel="stylesheet" href="~/root/css/planets.css" />
     <script src="~/Scripts/planets.js"></script>
 </head>
@@ -15,16 +19,15 @@
         <img src="~/Image/planets.png" alt="Logo" class="background-image">
     </div>
 
-    <!-- 区域一：标题为 "first" -->
+    
     <h3 class="region first" data-title="first">first planet</h3>
 
-    <!-- 区域二：标题为 "second" -->
+   
     <h3 class="region second" data-title="second">second planet</h3>
 
-    <!-- 区域三：标题为 "third" -->
+    
     <h3 class="region third" data-title="third">third planet</h3>
 
-    <!-- 弹出框的容器 -->
     <div class="popup-container" id="popup-container">
         <h3 id="popup-title">
             @Html.ActionLink("Index", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
