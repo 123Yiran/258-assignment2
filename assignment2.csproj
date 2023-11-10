@@ -381,9 +381,7 @@
     <Content Include="Views\Characters\Edit.cshtml" />
     <Content Include="Views\Characters\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\css\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
     <Content Include="Content\bootstrap.rtl.css.map" />
